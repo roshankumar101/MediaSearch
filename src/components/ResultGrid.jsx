@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { setQuery, setActiveTab, setResults, setLoading, setError } from '../redux/features/searchSlice'
+import { setResults, setLoading, setError } from '../redux/features/searchSlice'
 import { fetchPhotos, fetchVideos } from '../api/mediaAPI'
 import { useDispatch, useSelector } from 'react-redux'
 import ResultCard from './ResultCard'
