@@ -59,7 +59,7 @@ const ResultGrid = () => {
 
 
   return (
-    <div className='px-10 py-5 flex flex-wrap justify-center gap-4 overflow-auto'>
+    <div className='px-3 sm:px-10 py-5 flex flex-wrap justify-center gap-3 sm:gap-4 overflow-auto'>
       {results.map((item, idx)=>{
         return <div key={idx}>
           <ResultCard item={item} />
