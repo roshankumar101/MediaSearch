@@ -9,12 +9,12 @@ const CollectionPage = () => {
   const dispatch = useDispatch()
 
   return (
-    <div className='px-10 py-5 overflow-auto bg-gray-950'>
+    <div className='px-3 sm:px-10 py-5 overflow-auto bg-gray-950'>
 
       {items.length > 0 ?
 
         <div className='flex justify-between items-center mb-5'>
-          <h2 className='text-xl font-bold'>Your Collection</h2>
+          <h2 className='text-md sm:text-xl font-bold'>Your Collection</h2>
           <button onClick={() => {
             dispatch(clearCollection())
           }}
@@ -22,10 +22,10 @@ const CollectionPage = () => {
           >Delete All Collection</button>
         </div> :
 
-        <h2 className='text-xl font-bold flex justify-center'>Collection is Empty</h2>
+        <h2 className='text-xl font-bold flex justify-center text-nowrap'>Collection is Empty</h2>
       }
 
-      <div className='flex flex-wrap justify-start gap-4'>
+      <div className='flex flex-wrap justify-start gap-3 sm:gap-4'>
         {items.map((item, idx) => {
           return <div key={idx}>
             <CollectionCard item={item} />
